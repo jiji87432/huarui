@@ -1,0 +1,1 @@
+record num,tick type,security code,channel no,app seq num,timestamp,order time/exec time,order price/exec price,order volume/exec volume,side,order type/exec type,bid app seq num,offer app seq num,md_stream_id,variety_category

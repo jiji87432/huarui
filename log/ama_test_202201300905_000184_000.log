@@ -1,0 +1,426 @@
+2022-01-30 09:05:04.232 LOG_ALARM -----------------  log4z thread started!   ---------------------------- 
+2022-01-30 09:05:04.244 LOG_ALARM logger id=0 key=Main name=ama_test path=./log/ level=2 display=1 
+2022-01-30 09:05:04.248 LOG_ALARM logger id=1 key=indicator name=indicator path=./log/ level=1 display=1 
+2022-01-30 09:05:04.282 LOG_INFO  Application is launched, command: <./bin/ama_test --log-to-console --cfg-name ./etc/ama.json --data-to-console --data-to-csv --data-to-latency --snapshot --index-snapshot --tick-order --tick-execution --option-snapshot --hk-snapshot --csiindex-snapshot --afterhour-fixedprice-snapshot --afterhour-fixedprice-tick-execution --future-snapshot --orderqueue --neeq-snapshot --order-book> 
+2022-01-30 09:05:04.285 LOG_INFO  AMA curent version = V3.9.1.210624-rc8.0 
+2022-01-30 09:05:04.468 LOG_INFO  Check Init | Begin to init 
+2022-01-30 09:05:04.471 LOG_INFO  OrderBookAuthInfo | Ama version without order book 
+2022-01-30 09:05:04.474 LOG_INFO  GlobalConfig | channel_mode = 8, ha_mode = 0, min_log_level = 1, is_output_mon_data = true, is_subscribe_full = false, compress_mode = 0 
+2022-01-30 09:05:04.476 LOG_INFO  Tick Keep Order | keep_order = false, keep_order_timeout_ms = 3000 
+2022-01-30 09:05:04.478 LOG_INFO  PerformanceConfig | polling = false, queue_size = 819200, is_thread_safe = false, enable_dedup = true 
+2022-01-30 09:05:04.480 LOG_INFO  OrderBookConfig | thread_num = , entry_size = 10, enable_order_book = false 
+2022-01-30 09:05:04.482 LOG_INFO  Check HighAvailableMode | change enable_dedup = false 
+2022-01-30 09:05:04.485 LOG_INFO  Check SubscribeManage | Begin to init subscribe manager 
+2022-01-30 09:05:04.503 LOG_INFO  Check SubscribeCommon Init | Init SubscribeCommon Successfully 
+2022-01-30 09:05:04.507 LOG_INFO  Init | Begin to init memory pool 
+2022-01-30 09:05:04.511 LOG_INFO  MemoryPool | memory pool = {"MemBlock":[ { "Size": 1024, "Num": 81920, "Name": "1K"},{ "Size": 4096, "Num": 4096, "Name": "4K"},{ "Size": 8192, "Num": 1024, "Name": "8K"}]} 
+2022-01-30 09:05:04.923 LOG_INFO  Init | Success to init memory pool 
+2022-01-30 09:05:04.927 LOG_INFO  Check MasterSlaveEngine | Begin to init master slave engine 
+2022-01-30 09:05:04.931 LOG_INFO  Check MasterSlaveEngine | Success to init master slave engine, high availiable mode = 0 
+2022-01-30 09:05:05.300 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:05.304 LOG_INFO  Check Init | Success to init 
+2022-01-30 09:05:05.312 LOG_INFO  Subscription Infos | Set Subscription | Infos [ 
+market:<SSE>,sub_data_type:<Snapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<IndexSnapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<OptionSnapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<HKTSnapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<HKVCM>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<HKTProductStatus>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<AfterHourFixedPriceSnapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<CSIIndexSnapshot>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<TickExecution>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<AfterHourFixedPriceTickExecution>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<TickOrder>,category:<all types>,security_code:<600000>
+market:<SSE>,sub_data_type:<OrderQueue>,category:<all types>,security_code:<600000>
+market:<SZSE>,sub_data_type:<Snapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<IndexSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<CnIndexSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<IndicatorOfTradingVolumeSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<OptionSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<HKTSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<HKVCM>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<HKTProductStatus>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<AfterHourFixedPriceSnapshot>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<TickExecution>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<NegotiableTickExecution>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<RefinancingTickExecution>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<TickOrder>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<NegotiableTickOrder>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<RefinancingTickOrder>,category:<all types>,security_code:<000001>
+market:<SZSE>,sub_data_type:<OrderQueue>,category:<all types>,security_code:<000001>
+ ] 
+2022-01-30 09:05:05.319 LOG_INFO  AMATest Init Success. 
+2022-01-30 09:05:05.343 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:05.347 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:05.354 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:07.359 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:07.393 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:07.396 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:07.400 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:09.404 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:09.440 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:09.444 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:09.448 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:11.452 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:11.489 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:11.493 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:11.497 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:13.500 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:13.543 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:13.548 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:13.554 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:15.561 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:15.607 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:15.612 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:15.619 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:17.628 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:17.672 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:17.677 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:17.683 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:19.689 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:19.732 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:19.736 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:19.742 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:21.749 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:21.789 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:21.793 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:21.798 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:23.804 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:23.847 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:23.856 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:23.861 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:25.865 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:25.913 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:25.917 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:25.922 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:27.928 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:27.972 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:27.977 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:27.981 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:29.986 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:30.032 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:30.036 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:30.040 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:32.046 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:32.106 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:32.112 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:32.119 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:34.091 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:34.136 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:34.140 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:34.145 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:36.151 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:36.194 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:36.198 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:36.202 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:38.207 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:38.245 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:38.249 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:38.254 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:40.260 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:40.304 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:40.309 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:40.313 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:42.321 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:42.368 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:42.374 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:42.378 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:44.383 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:44.419 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:44.425 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:44.433 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:46.438 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:46.480 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:46.484 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:46.490 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:48.495 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:48.538 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:48.543 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:48.547 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:50.551 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:50.591 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:50.596 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:50.601 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:52.614 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:52.659 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:52.663 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:52.667 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:54.672 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:54.717 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:54.721 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:54.727 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:56.731 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:56.767 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:56.771 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:56.774 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:05:58.779 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:05:58.821 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:05:58.825 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:05:58.830 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:00.834 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:00.871 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:00.875 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:00.880 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:02.885 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:02.922 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:02.926 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:02.932 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:04.901 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:04.950 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:04.954 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:04.957 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:06.962 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:07.008 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:07.013 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:07.018 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:09.025 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:09.061 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:09.064 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:09.071 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:11.076 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:11.127 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:11.131 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:11.135 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:13.141 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:13.188 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:13.193 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:13.199 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:15.207 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:15.252 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:15.256 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:15.261 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:17.266 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:17.307 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:17.311 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:17.316 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:19.321 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:19.369 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:19.373 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:19.378 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:21.383 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:21.426 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:21.433 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:21.438 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:23.443 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:23.482 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:23.488 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:23.496 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:25.502 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:25.547 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:25.550 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:25.555 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:27.559 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:27.599 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:27.605 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:27.610 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:29.615 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:29.652 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:29.655 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:29.660 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:31.667 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:31.704 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:31.709 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:31.712 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:33.681 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:33.720 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:33.724 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:33.729 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:35.734 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:35.775 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:35.780 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:35.785 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:37.791 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:37.835 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:37.839 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:37.844 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:39.848 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:39.887 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:39.890 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:39.896 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:41.902 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:41.938 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:41.943 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:41.947 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:43.951 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:44.006 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:44.009 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:44.013 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:46.018 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:46.065 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:46.069 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:46.073 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:48.078 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:48.123 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:48.128 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:48.132 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:50.137 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:50.173 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:50.177 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:50.180 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:52.187 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:52.226 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:52.234 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:52.238 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:54.244 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:54.285 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:54.288 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:54.293 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:56.299 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:56.343 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:56.347 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:56.353 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:06:58.358 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:06:58.401 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:06:58.406 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:06:58.411 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:00.415 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:00.459 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:00.463 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:00.466 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:02.472 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:02.516 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:02.520 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:02.525 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:04.494 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:04.535 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:04.539 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:04.544 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:06.549 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:06.593 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:06.598 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:06.602 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:08.608 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:08.651 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:08.655 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:08.659 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:10.665 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:10.703 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:10.707 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:10.712 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:12.718 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:12.761 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:12.765 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:12.769 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:14.774 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:14.817 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:14.822 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:14.828 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:16.832 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:16.876 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:16.882 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:16.886 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:18.892 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:18.935 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:18.939 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:18.945 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:20.950 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:20.984 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:20.988 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:20.993 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:23.000 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:23.047 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:23.053 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:23.059 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:25.066 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:25.113 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:25.119 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:25.124 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:27.130 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:27.169 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:27.174 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:27.178 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:29.183 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:29.226 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:29.230 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:29.234 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:31.238 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:31.281 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:31.285 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:31.289 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:33.260 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:33.305 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:33.314 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:33.324 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:35.338 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:35.380 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:35.384 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:35.386 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:37.389 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:37.432 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:37.436 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:37.440 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:39.446 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:39.483 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:39.487 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:39.492 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:41.498 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:41.532 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:41.544 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:41.549 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:43.556 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:43.603 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:43.607 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:43.611 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:45.616 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:45.662 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:45.666 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:45.670 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:47.678 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:47.723 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:47.727 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:47.730 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:49.735 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:49.773 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:49.779 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:49.783 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:51.787 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:51.824 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:51.829 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:51.833 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:53.838 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:53.886 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:53.889 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:53.894 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:55.899 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:55.937 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:55.941 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:55.944 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:07:57.951 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:07:57.991 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:07:57.995 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:07:58.000 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:08:00.008 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:08:00.051 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:08:00.057 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:08:00.063 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:08:02.067 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:08:02.114 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:08:02.120 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:08:02.125 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:08:04.096 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:08:04.137 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:08:04.141 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:08:04.144 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:08:06.148 LOG_INFO  UMS Begin To Connect | Connecting to ums 61.144.241.205:8400 
+2022-01-30 09:08:06.185 LOG_ERROR UMS Log | ums msg: <connect to remote address failed> 
+2022-01-30 09:08:06.188 LOG_ERROR UMS Connect Failed | msg = disconnect to ums 61.144.241.205:8400 
+2022-01-30 09:08:06.192 LOG_INFO  Receive event, Level = kError, code = kUMSConnectFailed, event msg = Connect ums failed 
+2022-01-30 09:08:07.129 LOG_INFO  Release | Begin to release ama client 
+2022-01-30 09:08:07.132 LOG_INFO  UMS Return Event | event msg = AMA/RQA Client is Stopping 
+2022-01-30 09:08:07.136 LOG_INFO  UMS Return Event | event msg = AMA/RQA client has stopped 
+2022-01-30 09:08:08.215 LOG_INFO  Release | End to release ama client 
+2022-01-30 09:08:08.218 LOG_INFO  ama | ReleaseService start 
+2022-01-30 09:08:08.222 LOG_INFO  ama | ReleaseService end 
+2022-01-30 09:08:08.225 LOG_INFO  Check MasterSlaveEngine | Begin to release master slave engine 
+2022-01-30 09:08:08.229 LOG_INFO  Check MasterSlaveEngine | Success to release master slave engine 
+2022-01-30 09:08:08.232 LOG_INFO  Check SubscribeManage | Begin to release subscribe manager 
+2022-01-30 09:08:08.237 LOG_INFO  Check SubscribeCommon Release | Release SubscribeCommon Successfully 
+2022-01-30 09:08:08.240 LOG_INFO  Begin to handle left data from queue 
+2022-01-30 09:08:08.244 LOG_INFO  End to handle left data from queue 
+2022-01-30 09:08:08.246 LOG_INFO  Begin to handle left data from batch 
+2022-01-30 09:08:08.248 LOG_INFO  End to handle left data from batch 
+2022-01-30 09:08:08.253 LOG_INFO  Release | Begin to release ama 
+2022-01-30 09:08:08.256 LOG_INFO  ama | ReleaseService start 
+2022-01-30 09:08:08.261 LOG_INFO  ama | ReleaseService end 
+2022-01-30 09:08:08.265 LOG_INFO  Check SubscribeManage | Begin to release subscribe manager 
+2022-01-30 09:08:08.268 LOG_INFO  Release | Release ama successfully 
